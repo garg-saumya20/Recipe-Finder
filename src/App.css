@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,18 +13,90 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.Wrapper{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Steps{
+  overflow-y: scroll;
+  visibility: hidden;
+  position: relative;
+  top: 30px;
+  transition:0.2s;
+  opacity:0;
+  
+}
+.Ingredient:hover .Steps{
+  visibility: initial;
+  top:0;
+  opacity:1;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
 .App-header {
-  background-color: #282c34;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.Ingredient{
+  width:150px;
+  height:200px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  margin:20px;
+  padding: 20px;
+  align-items: center;
+  transition: 1s;
+}
+.Ingredient:hover{
+  width:160px;
+  height:210px;
 }
 
+.Ingredient img{
+  height: 80px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.Ingredient p{
+  margin:0;
+  font-size:12px;
+  
+}
+.Ingredient span{
+  font-size:14px;
+}
+.InputWrapper input{
+  width:300px;
+  height:30px;
+  border-radius:10px;
+  padding: 10px;
+  margin: 20px;
+  border:0px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+
+}
+.InputWrapper button{
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
 .App-link {
   color: #61dafb;
 }
