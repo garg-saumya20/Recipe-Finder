@@ -54,7 +54,7 @@ SearchForRecipe('chicken');
             return (
               <div  key={item.recipe.label} className="Ingredient">
                 <span>{item.recipe.label}</span>
-                <img src={item.recipe.image}/>
+                <img src={item.recipe.image} alt="item"/>
                 <div  className="Steps">
                 {item.recipe.ingredientLines.map((step,index)=>{
                       return <p key={index}>{step}</p>;
