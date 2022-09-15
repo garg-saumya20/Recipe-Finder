@@ -45,7 +45,7 @@ SearchForRecipe('chicken');
     <div className="App">
       <header className="App-header">
         <div class="InputWrapper">
-          <input ref={InputRef } type="text" placeholder="Search for a recipe"></input>
+          <input ref={InputRef } type="text" placeholder="Search for a great recipe"></input>
           <button onClick={search} >Search</button>
         </div>
         {Loading && <p>Loading...</p>}
